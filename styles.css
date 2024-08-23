@@ -89,9 +89,11 @@ footer a:hover {
 }
 
 #slides img {
-    height: 100%; /* Ensure images fill the height of the carousel */
-    object-fit: cover; /* Maintain aspect ratio and cover the carousel area */
+    width: 100%; /* Ensure images fill the width of the carousel */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    object-fit: cover; /* Show the entire image within the container */
 }
+
 
 /* Base styles for the carousel buttons */
 .carousel-button {
@@ -99,7 +101,7 @@ footer a:hover {
     color: white; /* White text */
     border: none; /* Remove default button border */
     padding: 0.75rem 1.5rem; /* Add some padding */
-    border-radius: 50%; /* Make the button circular */
+    border-radius: 50%; /* Makes the button circular */
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
     font-size: 1.5rem; /* Larger font size for the arrows */

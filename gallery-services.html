@@ -24,28 +24,32 @@
 
     <!-- Including Tailwind CSS for styling and Font Awesome for icons -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Including Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to the custom CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-gray-50">
 
-<!-- Header Section -->
-<div id="fading-header" class="fixed w-full top-0 left-0 z-50 bg-blue-800">
-    <header class="flex flex-col sm:flex-row justify-between items-center p-4 shadow-md text-white">
-        <div class="text-lg font-semibold text-center sm:text-left">Better Windows Inc.</div>
-        <div class="flex space-x-4 mt-2 sm:mt-0 justify-center sm:justify-end">
-            <!-- Facebook Icon -->
-            <a href="https://www.facebook.com/profile.php?id=100074747900019" class="text-facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="https://www.linkedin.com/in/brian-warner-476998322/" class="text-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <!-- Phone Number -->
-            <a href="tel:734-612-5162" class="text-button-color flex items-center space-x-1">
-                <i class="fas fa-phone"></i>
-                <span>734-612-5162</span>
-            </a>
-        </div>
-    </header>
-</div>
+    <!-- Fading Header Section -->
+    <div id="fading-header" class="fixed w-full top-0 left-0 z-50 bg-blue-800">
+        <header class="flex flex-col sm:flex-row justify-between items-center p-4 shadow-md text-white">
+            <div class="text-lg font-semibold text-center sm:text-left">Better Windows Inc.</div>
+            <div class="flex space-x-4 mt-2 sm:mt-0 justify-center sm:justify-end">
+                <!-- Facebook Icon -->
+                <a href="https://www.facebook.com/profile.php?id=100074747900019" class="text-facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/brian-warner-476998322/" class="text-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <!-- Phone Number -->
+                <a href="tel:734-612-5162" class="text-white flex items-center space-x-1">
+                    <i class="fas fa-phone"></i>
+                    <span>734-612-5162</span>
+                </a>
+            </div>
+        </header>
+    </div>
 
 <!-- Page Title -->
 <section class="p-6 bg-gray-800 text-white text-center mt-0">
@@ -68,6 +72,10 @@
                         <img src="images/windows2.jpg" alt="Energy Efficient Windows" class="w-full h-full object-cover">
                         <img src="images/windows3.jpg" alt="Custom Windows" class="w-full h-full object-cover">
                         <img src="images/windows4.jpg" alt="Bay Windows" class="w-full h-full object-cover">
+						<img src="images/BayWindow.jpg" alt="Bay Windows" class="w-full h-full object-cover">
+						<img src="images/BayWindow2.jpg" alt="Bay Windows" class="w-full h-full object-cover">
+						<img src="images/CompleteWindow.jpg" alt="Bay Windows" class="w-full h-full object-cover">
+						<img src="images/CompleteWindow2.jpg" alt="Bay Windows" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -82,9 +90,13 @@
             <div class="md:w-1/2 p-6">
                 <div id="doorwall-carousel" class="carousel w-full md:w-3/4 h-96 relative overflow-hidden">
                     <div id="doorwall-slides" class="slides flex transition-opacity duration-700">
-                        <img src="images/doorwall1.jpg" alt="Doorwall Installation" class="w-full h-full object-cover">
-                        <img src="images/doorwall2.jpg" alt="Custom Doorwalls" class="w-full h-full object-cover">
-                        <img src="images/doorwall3.jpg" alt="Sliding Doorwalls" class="w-full h-full object-cover">
+                        <img src="images/Doorwall.jpg" alt="Doorwall Installation" class="w-full h-full object-cover">
+                        <img src="images/Doorwall2.jpg" alt="Custom Doorwalls" class="w-full h-full object-cover">
+                        <img src="images/Doorwall3.jpg" alt="Sliding Doorwalls" class="w-full h-full object-cover">
+						<img src="images/Doorwall4.jpg" alt="Sliding Doorwalls" class="w-full h-full object-cover">
+						<img src="images/Doorwall5.jpg" alt="Sliding Doorwalls" class="w-full h-full object-cover">
+						<img src="images/Doorwall6.jpg" alt="Sliding Doorwalls" class="w-full h-full object-cover">
+						
                     </div>
                 </div>
             </div>
@@ -99,9 +111,9 @@
             <div class="md:w-1/2 p-6">
                 <div id="gutter-carousel" class="carousel w-full md:w-3/4 h-96 relative overflow-hidden">
                     <div id="gutter-slides" class="slides flex transition-opacity duration-700">
-                        <img src="images/gutter1.jpg" alt="Gutter Installation" class="w-full h-full object-cover">
-                        <img src="images/gutter2.jpg" alt="Custom Gutters" class="w-full h-full object-cover">
-                        <img src="images/gutter3.jpg" alt="Gutter Protection" class="w-full h-full object-cover">
+                        <img src="images/Gutter.jpg" alt="Gutter Installation" class="w-full h-full object-cover">
+                        <img src="images/Gutter2.jpg" alt="Custom Gutters" class="w-full h-full object-cover">
+                        <img src="images/Gutter3.jpg" alt="Gutter Protection" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -116,9 +128,10 @@
             <div class="md:w-1/2 p-6">
                 <div id="home-improvement-carousel" class="carousel w-full md:w-3/4 h-96 relative overflow-hidden">
                     <div id="home-improvement-slides" class="slides flex transition-opacity duration-700">
-                        <img src="images/home-improvement1.jpg" alt="Home Improvement Project" class="w-full h-full object-cover">
-                        <img src="images/home-improvement2.jpg" alt="Roofing Services" class="w-full h-full object-cover">
-                        <img src="images/home-improvement3.jpg" alt="Siding Installation" class="w-full h-full object-cover">
+                        <img src="images/Home-Improvement.jpg" alt="Home Improvement Project" class="w-full h-full object-cover">
+                        <img src="images/Home-Improvement2.jpg" alt="Roofing Services" class="w-full h-full object-cover">
+                        <img src="images/Home-Improvement3.jpg" alt="Siding Installation" class="w-full h-full object-cover">
+						<img src="images/MenAtWork5.jpg" alt="Siding Installation" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -130,9 +143,21 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center p-4">
-        <p>&copy; 2024 Better Windows Inc. All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer class="bg-white p-6 text-center text-gray-600">
+        <div class="mb-4">
+            <p class="text-sm">COPYRIGHT © 2024 BETTER WINDOWS INC - ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="mb-4">
+            <p class="text-sm">Better Windows Inc. is a Lead Certified Firm. Our products are sourced from trusted suppliers, including Renewal by Anderson, ensuring top-quality windows and doors for your home.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center mt-4 space-y-2 sm:space-y-0 sm:space-x-4 sm:flex-row">
+            <p class="text-sm text-gray-500">Produced by Devin Kelly</p>
+            <a href="https://www.linkedin.com/in/devin-kelly-08465b2b4/" target="_blank" class="text-linkedin flex items-center space-x-1 text-sm">
+                <i class="fab fa-linkedin"></i>
+                <span>Connect on LinkedIn</span>
+            </a>
+        </div>
     </footer>
 
     <!-- JavaScript for Carousels -->

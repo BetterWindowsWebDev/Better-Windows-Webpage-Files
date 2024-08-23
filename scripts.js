@@ -58,4 +58,16 @@ document.addEventListener('scroll', function() {
     }
 });
 
+// JavaScript for the Hero Section Video Play Button
+const playButton = document.getElementById('play-button');
+const video = document.getElementById('hero-video');
+const videoThumbnail = document.getElementById('video-thumbnail');
+
+playButton.addEventListener('click', function() {
+    videoThumbnail.style.display = 'none';
+    playButton.style.display = 'none';
+    video.style.display = 'block';
+    video.play();
+});
+
 // Add more JavaScript functionality here as needed

@@ -31,7 +31,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body class="bg-gray-50 font-libre-baskerville">
 
 <!-- Fading Header Section -->
@@ -52,24 +51,39 @@
     </header>
 </div>
 
-
-
 <!-- Hero Section -->
 <section class="flex flex-col md:flex-row bg-gray-100 p-8">
-    <div class="md:w-1/2">
-        <!-- Replace the placeholder image with your actual image -->
-        <img src="images/BetterWindowsSale.webp" alt="Summer Sale banner with windows in a bright room" class="w-3/5 h-auto">
-    </div>
-    <div class="md:w-1/2 flex flex-col justify-center text-center md:text-center p-8">
-        <h2 class="text-4xl font-bold">It's just a better window!</h2>
-        <p class="mt-4 text-gray-700">Professional window & doorwall installation services for your home!</p>
-        <div class="mt-6 space-y-4 md:space-y-0 md:space-x-4">
-            <a href="#contact-us" class="button-style block md:inline-block">CONTACT US TODAY</a>
-            <a href="founder.html" class="button-style block md:inline-block">LEARN MORE</a>
-            <a href="gallery-services.html" class="button-style block md:inline-block">GALLERY & SERVICES</a>
+    <div class="md:w-1/2 flex flex-col items-center p-8">
+        <!-- Video Section -->
+        <div class="relative w-full max-w-xs h-auto mb-4">
+            <video id="hero-video" class="w-full h-auto" controls style="display: none;">
+                <source src="media/Collage1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="images/BetterWindowsLogo.jpg" alt="Video Introduction" class="w-full h-auto" id="video-thumbnail">
+            <button id="play-button" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-3xl rounded-full">
+                &#9658; <!-- Play icon -->
+            </button>
+        </div>
+        <!-- Text Section -->
+        <div class="text-center md:text-center">
+            <h2 class="text-3xl font-bold">It's just a better window!</h2>
+            <p class="mt-4 text-gray-700">Professional window & doorwall installation services for your home!</p>
+            <div class="mt-6 space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#contact-us" class="button-style block md:inline-block">CONTACT US TODAY</a>
+                <a href="founder.html" class="button-style block md:inline-block">LEARN MORE</a>
+                <a href="gallery-services.html" class="button-style block md:inline-block">GALLERY & SERVICES</a>
+            </div>
         </div>
     </div>
+    <div class="md:w-1/2 flex flex-col justify-center items-center p-8">
+        <!-- Smaller Image Section -->
+        <img src="images/BetterWindowsSale.jpg" alt="Summer Sale banner with windows in a bright room" class="w-3/5 h-auto">
+    </div>
 </section>
+
+
+
 
     <!-- Main Content Section -->
     <section class="bg-white p-8">
@@ -88,8 +102,13 @@
         <div id="carousel" class="w-full md:w-3/4 h-96 overflow-hidden relative">
             <div id="slides" class="flex transition-transform duration-300 ease-in-out">
                 <img src="images/MenAtWork1.jpg" alt="Image of window installation" class="w-full h-full object-cover">
-                <img src="images/FinishedJob1.jpg" alt="Image of home with new windows" class="w-full h-full object-cover">
-                <img src="images/TeamAtWork1.jpg" alt="Image of installation team at work" class="w-full h-full object-cover">
+                <img src="images/MenAtWork2.jpg" alt="Image of installation team at work" class="w-full h-full object-cover">
+				<img src="images/MenAtWork3.jpg" alt="Image of installation team at work" class="w-full h-full object-cover">
+				<img src="images/MenAtWork4.jpg" alt="Image of installation team at work" class="w-full h-full object-cover">
+				<img src="images/MenAtWork5.jpg" alt="Image of installation team at work" class="w-full h-full object-cover">
+				<img src="images/MenAtWork6.jpg" alt="Image of installation team at work" class="w-full h-full object-cover">
+				<img src="images/MenAtWork7.jpg" alt="Image of installation team at work" class="w-full h-full object-cover">
+				<img src="images/FinishedJob1.jpg" alt="Image of home with new windows" class="w-full h-full object-cover">
             </div>
         </div>
         <button id="nextButton" class="carousel-button absolute right-0 transform -translate-y-4/5">
@@ -97,8 +116,6 @@
         </button>
     </div>
 </section>
-
-
 
 <!-- Online Appointments Section -->
 <section class="bg-gray-200 p-8">
@@ -142,22 +159,22 @@
                 <div class="flex items-center space-x-4">
                     <img src="images/FacebookLogo.png" alt="Customer profile picture" class="rounded-full">
                     <div>
-                        <p class="font-semibold">Devin Kelly</p>
-                        <p class="text-sm text-gray-600">8/13/2024</p>
+                        <p class="font-semibold">Rene' Proffitt</p>
+                        <p class="text-sm text-gray-600">1/25/2024</p>
                     </div>
                 </div>
-                <p class="mt-4 text-gray-700">"Can honestly say their team is like family, they tr..."</p>
+                <p class="mt-4 text-gray-700">"These guys are by far the hardest workers, they do..."</p>
                 <a href="https://www.facebook.com/profile.php?id=100074747900019&sk=reviews" class="text-blue-500 text-sm mt-2 block" target="_blank">Read full review <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="bg-white p-6 shadow-lg">
                 <div class="flex items-center space-x-4">
                     <img src="images/FacebookLogo.png" alt="Customer profile picture" class="rounded-full">
                     <div>
-                        <p class="font-semibold">Rene' Proffitt</p>
-                        <p class="text-sm text-gray-600">1/25/2024</p>
+                        <p class="font-semibold">Phillip Lawson</p>
+                        <p class="text-sm text-gray-600">1/18/2024</p>
                     </div>
                 </div>
-                <p class="mt-4 text-gray-700">"These guys are by far the hardest workers, they do..."</p>
+                <p class="mt-4 text-gray-700">"they installed 10 windows I was very surprised how fast"</p>
                 <a href="https://www.facebook.com/profile.php?id=100074747900019&sk=reviews" class="text-blue-500 text-sm mt-2 block" target="_blank">Read full review <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
@@ -183,13 +200,22 @@
 </section>
 
 <!-- Footer Section -->
-<footer class="bg-white p-4 text-center text-gray-600">
-    <p>COPYRIGHT © 2024 BETTER WINDOWS INC - ALL RIGHTS RESERVED.</p>
-    <div class="mt-4">
-        <p>Produced by Devin Kelly</p>
-        <a href="https://www.linkedin.com/in/devin-kelly-08465b2b4/" target="_blank" class="button-style mt-2 inline-block">Connect on LinkedIn</a>
+<footer class="bg-white p-6 text-center text-gray-600">
+    <div class="mb-4">
+        <p class="text-sm">COPYRIGHT © 2024 BETTER WINDOWS INC - ALL RIGHTS RESERVED.</p>
+    </div>
+    <div class="mb-4">
+        <p class="text-sm">Better Windows Inc. is a Lead Certified Firm. Our products are sourced from trusted suppliers, including Renewal by Anderson, ensuring top-quality windows and doors for your home.</p>
+    </div>
+    <div class="flex flex-col items-center justify-center mt-4 space-y-2 sm:space-y-0 sm:space-x-4 sm:flex-row">
+        <p class="text-sm text-gray-500">Produced by Devin Kelly</p>
+        <a href="https://www.linkedin.com/in/devin-kelly-08465b2b4/" target="_blank" class="text-linkedin flex items-center space-x-1 text-sm">
+            <i class="fab fa-linkedin"></i>
+            <span>Connect on LinkedIn</span>
+        </a>
     </div>
 </footer>
+
 
 
     <!-- Link to the custom JavaScript file -->
